@@ -54,8 +54,8 @@ p {
   text-decoration: none;
   mix-blend-mode: screen;
   background-color: hsl(0, 0%, 95%);
-  padding: 0.5em 1em;
-  border-radius: 25px;
+  padding: 1em 2em;
+  border-radius: 50px;
   font-size: 1em;
 }
 
@@ -65,22 +65,37 @@ p {
   }
 
   .container {
-    width: 80%;
+    width: 70%;
   }
 
   .wrapper {
     flex-direction: row;
-    height: 60vh;
+    height: 45vh;
     position: relative;
   }
 
   .button {
     position: absolute;
     bottom: 30px;
+    font-size: 1.25vw;
+  }
+
+  img {
+    width: 6vw;
   }
 
   p {
-    font-size: 1.75vw;
+    font-size: 1.25vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    height: 55vh;
+  }
+
+  p {
+    font-size: 1.3vw;
   }
 }
 
@@ -90,7 +105,7 @@ p {
   }
 
   .container {
-    width: 80%;
+    width: 70%;
   }
 
   .wrapper {
@@ -101,7 +116,8 @@ p {
 
   .button {
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;
+    font-size: 1.25vw;
   }
 
   img {
@@ -113,6 +129,6 @@ p {
   }
 
   p {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
   }
 }
