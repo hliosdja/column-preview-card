@@ -1,0 +1,118 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: 2em 0;
+  border-radius: 25px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sedans {
+  background-color: #e28726;
+  padding: 3em 2em;
+}
+
+.suv {
+  background-color: #006870;
+  padding: 3em 2em;
+}
+
+.luxury {
+  background-color: #004241;
+  padding: 3em 2em;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 3em;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.button {
+  color: black;
+  text-decoration: none;
+  mix-blend-mode: screen;
+  background-color: hsl(0, 0%, 95%);
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .wrapper {
+    flex-direction: row;
+    height: 60vh;
+    position: relative;
+  }
+
+  .button {
+    position: absolute;
+    bottom: 30px;
+  }
+
+  p {
+    font-size: 1.75vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .wrapper {
+    flex-direction: row;
+    height: 60vh;
+    position: relative;
+  }
+
+  .button {
+    position: absolute;
+    bottom: 30px;
+  }
+
+  img {
+    width: 6vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 1.5vw;
+  }
+}
